@@ -1,0 +1,285 @@
+@charset "utf-8";
+
+/*TOP画
+-------------------------*/
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  margin: 0 auto;
+}
+
+img {
+  width: auto;
+}
+
+h1.Screen {
+  width: auto;
+  text-align: center;
+  display: block;
+  margin-bottom: 0;
+  line-height: 0;
+  overflow-x: hidden;
+}
+
+h2.title {
+  margin-left: 660px;
+  margin-top: -465px;
+  color: #F2ECEC;
+  font-size: 30px;
+  font-family: 'メイリオ', 'Meiryo', sans-serif;
+}
+
+/*メニューバー(ハンバーガーメニュー部分)
+-------------------------*/
+.hamburger-menu {
+  width: 30px;
+  height: 22px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+h1.title {
+  color: #fefdfe;
+  font-size: 12px;
+  margin-top: 30px;
+  margin-left: -5px;
+  font-family: 'メイリオ', 'Meiryo', sans-serif;
+}
+
+.line {
+  background-color: #fefdfe;
+  height: 4px;
+  width: 100%;
+  position: absolute;
+  transition: all 0.3s;
+}
+
+.line:nth-of-type(1) {
+  top: 0;
+}
+
+.line:nth-of-type(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hamburger-menu.active>.line:nth-of-type(1) {
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.hamburger-menu.active>.line:nth-of-type(2) {
+  top: 50%;
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+/*メニューバー(ハンバーガーメニュー部分)
+-------------------------*/
+.nav-menu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  width: 670px;
+  height: 670px;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  opacity: 0;
+}
+
+.nav-menu.active {
+  display: flex;
+  animation: fadeIn 0.5s forwards;
+
+}
+
+div.title {
+  font-family: Georgia, serif;
+  font-size: 30px;
+  margin-left: -200px;
+  margin-top: -50px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #1C1A1A;
+  padding: 40px;
+  margin: -81px;
+  font-size: 30px;
+  top: 0;
+  bottom: 0;
+  width: 50px;
+  height: 80px;
+  text-align: center;
+  margin-top: 80px;
+  font-family: 'メイリオ', 'Meiryo', sans-serif;
+  white-space: nowrap;
+}
+
+/*職務経歴書
+-------------------------*/
+
+h2.number {
+  color: #1C1A1A;
+  font-size: 20px;
+  transform: translate(0%, -50%);
+  top: 50%;
+  left: 50%;
+  margin-top: -200px;
+}
+
+h3.vitae {
+  color: #1C1A1A;
+  font-size: 18px;
+  font-family: 'メイリオ', 'Meiryo', sans-serif;
+  margin-top: -26px;
+  margin-left: 215px;
+}
+
+h4.vitae {
+  color: #1C1A1A;
+  margin-top: 25px;
+  margin-left: 150px;
+  text-decoration: none;
+  display: inline-block;
+	position: relative;
+}
+
+h4.vitae:before{
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: -4px;
+	width: 100%;
+	height: 6px;
+	background: #009DBD;
+	transform: scale(0, 1);
+	transition: 0.4s;
+}
+
+h4.vitae:hover:before {
+	transform: scale(1.5);
+}
+
+/*戦国サイト
+-------------------------*/
+
+h5.number {
+  color: #1C1A1A;
+  font-size: 20px;
+  margin-top: 46px;
+}
+
+
+h6.sengoku {
+  color: #1C1A1A;
+  margin-top: 25px;
+  margin-left: 150px;
+  text-decoration: none;
+  display: inline-block;
+	position: relative;
+}
+
+h6.sengoku:before{
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: -4px;
+	width: 100%;
+	height: 6px;
+	background: #009DBD;
+	transform: scale(0, 1);
+	transition: 0.4s;
+}
+
+h6.sengoku:hover:before {
+	transform: scale(1.5);
+}
+
+
+/*料理サイト
+-------------------------*/
+
+h7.number {
+  color: #1C1A1A;
+  font-size: 20px;
+  margin-top: 46px;
+  position: absolute;
+  top: 46%;
+  left: 8%;
+}
+
+h8.cook {
+  color: #1C1A1A;
+  margin-top: 25px;
+  margin-left: 134px;
+  position: absolute;
+  top: 55%;
+  left: 10%;
+  text-decoration: none;
+  display: inline-block;
+}
+
+h8.cook:before{
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: -4px;
+	width: 100%;
+	height: 6px;
+	background: #009DBD;
+	transform: scale(0, 1);
+	transition: 0.4s;
+}
+
+h8.cook:hover:before {
+	transform: scale(1.5);
+}
+
+.triangle01 {
+  border-top: 70px solid #009DBD;
+  border-right: 70px solid #009DBD;
+  border-bottom: 70px solid transparent;
+  border-left: 70px solid transparent;
+  position: absolute;
+  top: 0%;
+  left: 79%;
+  margin-top: -1px;
+  margin-left: 5px;
+  }
+
+  .triangle02 {
+  border-top: 70px solid transparent;
+  border-right: 70px solid transparent;
+  border-bottom: 70px solid #DCE1E2;
+  border-left: 70px solid #DCE1E2;
+  position: absolute;
+  top: 80%;
+  left: -1%;
+  margin-top: -1px;
+  margin-left: 5px;
+  }
+
+@keyframes fadeIn {
+  0% {
+    top: 45%;
+    opacity: 0;
+  }
+
+  100% {
+    top: 50%;
+    opacity: 1;
+  }
+}

@@ -1,0 +1,111 @@
+@charset "utf-8";
+
+
+/*TOP画
+-------------------------*/
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: auto;
+  overflow: hidden;
+}
+
+main {
+  margin: 0 auto;
+}
+
+img {
+  width: 22%;
+  height: auto;
+  margin-bottom: 55px;
+}
+
+a.curriculum {
+  padding: 0;
+}
+
+div.curriculum01 {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+h1.title01 {
+  font-family: 'メイリオ', 'Meiryo', sans-serif;
+  color: #1C1A1A;
+  font-size: 30px;
+  margin-bottom: -74px;
+}
+
+h2.title02 {
+  font-family: 'メイリオ', 'Meiryo', sans-serif;
+  color: #1C1A1A;
+  font-size: 18px;
+  padding: 50px;
+  padding-left: 470px;
+}
+
+div.curriculum02 {
+  position: absolute;
+  top: 400px;
+  left: 400px;
+  font-family: 'メイリオ', 'Meiryo', sans-serif;
+  color: #1C1A1A;
+  font-size: 30px;
+}
+
+h1.title03::after {
+  position: absolute;
+  content: "";
+  background-color: #1C1A1A;
+  width: 960px;
+  height: 2px;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-28%);
+}
+
+div.curriculum03 {
+  position: absolute;
+  top: 550px;
+  left: 400px;
+  font-family: 'メイリオ', 'Meiryo', sans-serif;
+  color: #1C1A1A;
+  font-size: 30px;
+}
+
+h1.title04::after {
+  position: absolute;
+  content: "";
+  background-color: #1C1A1A;
+  width: 1200px;
+  height: 2px;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-37%);
+}
+
+h1.triangle01 {
+  border-top: 300px solid #009DBD;
+  border-right: 300px solid #009DBD;
+  border-bottom: 300px solid transparent;
+  border-left: 300px solid transparent;
+  position: absolute;
+  top: -6%;
+  left: 120%;
+  margin-top: 50px;
+  margin-left: -900px;
+  }
+
+h2.triangle02 {
+    border-top: 600px solid transparent;
+    border-right: 900px solid transparent;
+    border-bottom: 600px solid #DCE1E2;
+    border-left: 900px solid #DCE1E2;
+    position: absolute;
+    top: 80%;
+    left: -1%;
+    margin-top: -340px;
+    margin-left: 5px;
+    }
